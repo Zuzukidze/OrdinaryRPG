@@ -66,10 +66,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Animations.cs" />
     <Compile Include="Assets\Scripts\Builder.cs" />
+    <Compile Include="Assets\Scripts\Button.cs" />
     <Compile Include="Assets\Scripts\CharacterController.cs" />
-    <Compile Include="Assets\Scripts\Hero.cs" />
+    <Compile Include="Assets\Scripts\LogicElement.cs" />
+    <Compile Include="Assets\Scripts\LogicGate.cs" />
+    <Compile Include="Assets\Scripts\MovableBlock.cs" />
     <Compile Include="Assets\Scripts\newcam.cs" />
   </ItemGroup>
   <ItemGroup>

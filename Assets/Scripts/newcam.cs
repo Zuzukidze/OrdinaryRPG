@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class newcam : MonoBehaviour {
-	public float dampTime = 0.15f;
-	private Vector3 velocity = Vector3.zero;
+	//public float dampTime = 0.15f;
+	//private Vector3 velocity = Vector3.zero;
 	public Transform target;
 	
 	// Update is called once per frame

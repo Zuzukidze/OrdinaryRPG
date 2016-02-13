@@ -22,8 +22,16 @@ public class Builder : MonoBehaviour {
                 Instantiate(gameObject, new Vector3((transform.position.x + x + offsetX)* Math.Abs(width)/width, (transform.position.y + y + offsetY)* Math.Abs(height)/height, 0), Quaternion.identity);
     }
     [ContextMenu("SetPositionToArray")]
-    private void positionToArray()
+    public void positionToArray()
     {
         transform.position = new Vector3((int)Math.Round(transform.position.x), (int)Math.Round(transform.position.y));
+    }
+    public void XToArray()
+    {
+        transform.position = new Vector3((int)Math.Round(transform.position.x), transform.position.y);
+    }
+    public void YToArray()
+    {
+        transform.position = new Vector3(transform.position.x, (int)Math.Round(transform.position.y));
     }
 }

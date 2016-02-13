@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e6f7cfb45cd4d8a45951b3bacc6bef65
-timeCreated: 1454404660
+timeCreated: 1454759721
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -46,8 +46,8 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 2048
+  textureFormat: -2
+  maxTextureSize: 512
   textureSettings:
     filterMode: 0
     aniso: 16
@@ -77,8 +77,8 @@ TextureImporter:
         y: 69
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Hero Sprite Map_1
@@ -88,8 +88,8 @@ TextureImporter:
         y: 69
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Hero Sprite Map_2
@@ -99,8 +99,8 @@ TextureImporter:
         y: 69
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Hero Sprite Map_3
@@ -110,8 +110,8 @@ TextureImporter:
         y: 69
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Hero Sprite Map_4
@@ -121,8 +121,8 @@ TextureImporter:
         y: 52
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Hero Sprite Map_5
@@ -132,8 +132,8 @@ TextureImporter:
         y: 52
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Hero Sprite Map_6
@@ -143,8 +143,8 @@ TextureImporter:
         y: 52
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Hero Sprite Map_7
@@ -154,8 +154,8 @@ TextureImporter:
         y: 52
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Hero Sprite Map_8
@@ -165,8 +165,8 @@ TextureImporter:
         y: 35
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Hero Sprite Map_9
@@ -176,8 +176,8 @@ TextureImporter:
         y: 35
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Hero Sprite Map_10
@@ -187,8 +187,8 @@ TextureImporter:
         y: 35
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Hero Sprite Map_11
@@ -198,8 +198,8 @@ TextureImporter:
         y: 35
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Hero Sprite Map_12
@@ -209,8 +209,8 @@ TextureImporter:
         y: 18
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Hero Sprite Map_13
@@ -220,8 +220,8 @@ TextureImporter:
         y: 18
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Hero Sprite Map_14
@@ -231,8 +231,8 @@ TextureImporter:
         y: 18
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Hero Sprite Map_15
@@ -242,8 +242,8 @@ TextureImporter:
         y: 18
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Hero Sprite Map_16
@@ -253,8 +253,8 @@ TextureImporter:
         y: 1
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Hero Sprite Map_17
@@ -264,8 +264,8 @@ TextureImporter:
         y: 1
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Hero Sprite Map_18
@@ -275,8 +275,8 @@ TextureImporter:
         y: 1
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Hero Sprite Map_19
@@ -286,8 +286,8 @@ TextureImporter:
         y: 1
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     outline: []

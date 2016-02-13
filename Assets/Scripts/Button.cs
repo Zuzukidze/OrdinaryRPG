@@ -2,43 +2,68 @@
 using System.Collections;
 using System;
 
-public class Button : MonoBehaviour {
+public class Button : LogicElement {
     public bool isUpOnUnpressed = false;
-    public LogicElement target;
+    public int TimeBeforeUnpressing = 0;
+    private float timer = 0;
+    public LogicElement[] Targets;
     private bool isPressed = false;
     private Animator anim;
-    private BoxCollider2D box;
-	// Use this for initialization
-	void Start () {
+    private int pressers;
+    // Use this for initialization
+    void Start () {
         anim = GetComponent<Animator>();
-        box = GetComponent<BoxCollider2D>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+        if (pressers > 0)
+        {
+            Activate();
+            timer = 0;
+        }
+        else {
+            if (timer >= TimeBeforeUnpressing)
+                Deactivate();
+            else
+                timer += Time.deltaTime;
+        }
 	}
-    void OnTriggerEnter2D(Collider2D other)
+    public override void Activate()
     {
         if (!isPressed)
-        { 
+        {
             anim.Play("press");
             isPressed = true;
-            target.Activate();
+            for (int i = 0; i < Targets.Length; i++)
+            {
+                if (Targets[i] != null) Targets[i].Activate();
+                if (!isUpOnUnpressed) Targets[i].canDeactivate = false;
+            }
         }
     }
-    void OnTriggerExit2D(Collider2D other)
+    public override void Deactivate()
     {
         if (isPressed && isUpOnUnpressed)
         {
             anim.Play("unpress");
             isPressed = false;
-            target.Deactivate();
+            for (int i = 0; i < Targets.Length; i++)
+                if (Targets[i] != null && Targets[i].canDeactivate) Targets[i].Deactivate();
         }
     }
-    [ContextMenu("SetPositionToArray")]
-    private void positionToArray()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        transform.position = new Vector3((int)Math.Round(transform.position.x), (int)Math.Round(transform.position.y));
+        if (!other.isTrigger)
+        {
+            pressers++;
+        }
+    }
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (!other.isTrigger)
+        {
+            pressers--;
+        }
     }
 }

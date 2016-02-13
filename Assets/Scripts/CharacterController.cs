@@ -5,10 +5,11 @@ public class CharacterController : MonoBehaviour {
 
 	public float maxSpeed = 20f;
 	private Animator anim;
-	private int dir = 0;
 	public float moveVer;
 	public float moveHor;
-	public int isMV = 0, isMH = 0;
+    public bool isMovingBlock = false;
+    public Vector2 lastvel = Vector2.zero;
+
 
 	void Start () {
 		anim = GetComponent<Animator>();
@@ -33,11 +34,14 @@ public class CharacterController : MonoBehaviour {
             if (moveHor > 0.1f)
                 anim.Play("rightRun");
         }
-
-        GetComponent<Rigidbody2D>().velocity = new Vector2(moveHor * maxSpeed, moveVer * maxSpeed);
+        Vector2 velocity = new Vector2(moveHor * maxSpeed, moveVer * maxSpeed);
+        if (isMovingBlock)
+            velocity *= 0.5f;
+            GetComponent<Rigidbody2D>().velocity = velocity;
+        lastvel = velocity;
 	}
-
-	void Update () {
+    
+    void Update () {
 	
 	}
 }

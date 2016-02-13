@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d8b85fafd4f1af144a082604d75fec21
-timeCreated: 1454477993
+timeCreated: 1455296381
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -55,39 +55,6 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Button (2)_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 16
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: Button (2)_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: Button (2)_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
     - name: Button (2)_3
       rect:
         serializedVersion: 2

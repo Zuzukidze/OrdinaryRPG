@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
-public class LogicElement : MonoBehaviour {
-
+public abstract class LogicElement : MonoBehaviour {
+    public bool canDeactivate = true;
+    public int HowManyActivatesNeed = 1;
+    protected int activatesCount;
 	// Use this for initialization
 	void Start () {
 	
@@ -13,12 +16,18 @@ public class LogicElement : MonoBehaviour {
 	
 	}
 
-    public virtual void Activate() { }
-    public void Deactivate() { }
+    public virtual void Activate() {
+        activatesCount++;
+    }
+    public virtual void Deactivate() { activatesCount--; }
 
     [ContextMenu("Destroy")]
     private void destroy()
     {
         Destroy(gameObject);
+    }
+    protected void positionToArray()
+    {
+        transform.position = new Vector3((int)Math.Round(transform.position.x), (int)Math.Round(transform.position.y));
     }
 }

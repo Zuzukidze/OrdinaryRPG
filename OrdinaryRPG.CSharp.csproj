@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\LogicElement.cs" />
     <Compile Include="Assets\Scripts\LogicGate.cs" />
     <Compile Include="Assets\Scripts\MovableBlock.cs" />
+    <Compile Include="Assets\Scripts\MovableBlock2.cs" />
     <Compile Include="Assets\Scripts\newcam.cs" />
   </ItemGroup>
   <ItemGroup>

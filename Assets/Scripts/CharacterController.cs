@@ -37,7 +37,9 @@ public class CharacterController : MonoBehaviour {
         Vector2 velocity = new Vector2(moveHor * maxSpeed, moveVer * maxSpeed);
         if (isMovingBlock)
             velocity *= 0.5f;
-            GetComponent<Rigidbody2D>().velocity = velocity;
+        GetComponent<Rigidbody2D>().velocity = velocity;
+        if (Input.GetAxis("Fire1") > 0.1)
+            anim.Play("RightAttack");
         lastvel = velocity;
 	}
     

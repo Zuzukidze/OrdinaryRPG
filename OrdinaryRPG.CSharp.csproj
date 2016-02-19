@@ -69,10 +69,15 @@
     <Compile Include="Assets\Scripts\Builder.cs" />
     <Compile Include="Assets\Scripts\Button.cs" />
     <Compile Include="Assets\Scripts\CharacterController.cs" />
+    <Compile Include="Assets\Scripts\EntityBase.cs" />
+    <Compile Include="Assets\Scripts\EntitySimple.cs" />
+    <Compile Include="Assets\Scripts\ExtensionMethods.cs" />
     <Compile Include="Assets\Scripts\LogicElement.cs" />
     <Compile Include="Assets\Scripts\LogicGate.cs" />
     <Compile Include="Assets\Scripts\MovableBlock.cs" />
     <Compile Include="Assets\Scripts\MovableBlock2.cs" />
+    <Compile Include="Assets\Scripts\RayCollider.cs" />
+    <Compile Include="Assets\Scripts\ShowGizmo.cs" />
     <Compile Include="Assets\Scripts\newcam.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -7,7 +7,6 @@ public class Button : LogicElement {
     public int TimeBeforeUnpressing = 0;
     private float timer = 0;
     public LogicElement[] Targets;
-    private bool isPressed = false;
     private Animator anim;
     private int pressers;
     // Use this for initialization
@@ -31,10 +30,10 @@ public class Button : LogicElement {
 	}
     public override void Activate()
     {
-        if (!isPressed)
+        if (!isActivated)
         {
             anim.Play("press");
-            isPressed = true;
+            isActivated = true;
             for (int i = 0; i < Targets.Length; i++)
             {
                 if (Targets[i] != null) Targets[i].Activate();
@@ -44,10 +43,10 @@ public class Button : LogicElement {
     }
     public override void Deactivate()
     {
-        if (isPressed && isUpOnUnpressed)
+        if (isActivated && isUpOnUnpressed)
         {
             anim.Play("unpress");
-            isPressed = false;
+            isActivated = false;
             for (int i = 0; i < Targets.Length; i++)
                 if (Targets[i] != null && Targets[i].canDeactivate) Targets[i].Deactivate();
         }

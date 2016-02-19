@@ -18,13 +18,20 @@ public class LogicGate : LogicElement {
     public override void Activate()
     {
         base.Activate();
-        if (activatesCount >= HowManyActivatesNeed)
+        if (activatesCount >= HowManyActivatesNeed && !isActivated)
+        {
+            isActivated = true;
             anim.Play("Disappear");
+        }
     }
     public override void Deactivate()
     {
         base.Deactivate();
-        anim.Play("Appear");
+        if (isActivated)
+        {
+            isActivated = false;
+            anim.Play("Appear");
+        }
     }
     [ContextMenu("Disable Collider")]
     private void DisableCollider()
